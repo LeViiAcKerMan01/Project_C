@@ -1,28 +1,28 @@
-/* CHANGING CHARACTERS IN A STRING
+/*  OUTPUTTING CHARACTERS FROM A STRING
 
-To change the value of a specific character in a string
 
-# We refer to the index number
+Since strings are actually arrays in C, we can access a string by referring to its index number inside square brackets [].
+If we want to print a single character we use %c format specifier. We use the concept of indexing which means 
+every character in a string corresponds to a number called the index number
 
-# We then use single quotes to declare the new value
+               0 1 2 3 4 5 6 7  - index number
+     for eg - "C o d e C h e f"
+Note:
 
-for eg - char myString[] = "Chaf";
-     myString[2] = 'e';
-     //Now, the string is "Chef".
+# Indexing always starts from 0 when going left to right.
+# So the first character of a string s is s[0], the second is s[1], and so on.
 
 Write a program that does the following
 
-# Initialise a string variable word and assign the value "Ocygen" to it.
-# You now want to fix the typo in the given string.
-# Use the syntax explained above to replace 'c' with 'x' in the variable word
-# Output the updated word to console
+# Create a string variable word and assign the text "Programming" to it
+# Print the characters o and r from the string word in separate lines using the syntax defined above
 */
 #include <stdio.h>
 
 int main() {
-  char word[] = "Ocygen";
-  word[ 1 ] = 'x';
-  printf("%s", word );
-
+  char word[] = "Programming";
+  printf("%c \n", word[ 2 ]);
+  printf("%c", word[ 4 ]);
+ 
   return 0;
 }
