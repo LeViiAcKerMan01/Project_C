@@ -1,4 +1,4 @@
-/*
+/*  INTRODUCTION
 Welcome to the 1st module on Learn C syntax. Some important points
 
 > This learning path is geared to take you on the journey towards solving programming problems.

@@ -1,38 +1,25 @@
-/*  CONCATENATION
+/*  CREATING A STRING
 
-C also has many useful string functions, which can be used to perform certain operations on strings.
-To use them, you must include the header file in your program.
-To concatenate (combine) two strings, you can use the strcat() function:
+Strings are used for storing text.
+Unlike many other programming languages, C does not have a String type to easily create string variables.
+Instead, you must use the char type and create an array of characters to make a string in C.
 
-# strcat(a, b) stores the concatenated string in string a
-# Note - the size of the first string should be large enough to store the result of the two strings combined(20 in our example) that is why it is important to declare the size of the first string.
-Note: You can add spaces between words by using an empty " " with a space inside or by providing a space in the end of a word.
-For eg -
-char a[20] = "Good ";
-char b[] = Work
-strcat(a, b);
-printf(%s, a);
-output = Good Work
+ for eg - char stringname[] = "Hello Chef!";
 
-Task
+Note that you have to use double quotes ("").
+
+To output the string, you can use the printf() function together with the format specifier %s to tell C that we are now working with strings:
 
 Write a program that does the following
 
-Declare two variables x and y
-Assign the values "Hello " and "World!" to x and y respectively
-Output "Hello World!" to the console by concatenating the strings x and y
+# Create a string named fruit and assign the value "Apple" to it.
+# Output fruit to the console.
 */
 #include <stdio.h>
 
 int main() {
-  char x[30] = "Hello ";
-  char y[] = "World!";
- 
-  // Concatenate str2 to str1 (the result is stored in str1)
-  strcat(x, y);
-  
-  // Print str1
-  printf("%s", x);
+  char fruit[] = "Apple";
+  printf("%s", fruit );
  
   return 0;
 }
